@@ -65,19 +65,12 @@ ParentObj.sum(arr3);
 
 
 // Q:4)
-function allKeys(obj) {
-    if (!isObject(obj)) return [];
-    var keys = [];
-    for (var key in obj) keys.push(key);
-    return keys;
-}
-function isObject(obj) 
-{
-    var type = typeof obj;
-    return type === 'function' || type === 'object' && !!obj;
-  }
-function Student(name) {
-  this.name = name;
-}
-Student.prototype.rollno = true;
-console.log(allKeys(new Student("John")));
+var myobj ={
+            name : "John",
+            batch : "EA18",
+            year : 2022,
+          }
+          let result = Object.keys(myobj);
+          console.log(result);
+
+   
